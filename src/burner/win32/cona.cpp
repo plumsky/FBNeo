@@ -237,7 +237,10 @@ int ConfigAppLoad()
 #define FLT(x) { TCHAR* szValue = LabelCheck(szLine,_T(#x));			\
   if (szValue) x = _tcstod(szValue, NULL); }
 #define STR(x) { TCHAR* szValue = LabelCheck(szLine,_T(#x) _T(" "));	\
-  if (szValue) _tcscpy(x,szValue); }
+    if (szValue && szValue[0]) { \
+        _tcscpy_s(x, _countof(x), szValue); \
+    } \
+}
 #define PAT(x) { TCHAR* szValue = LabelCheck(szLine,_T(#x) _T(" "));	\
 	if (szValue) { _tcscpy(x, szValue); UpdatePath(x); } }
 #define DRV(x) { TCHAR* szValue = LabelCheck(szLine,_T(#x) _T(" "));	\
