@@ -650,7 +650,7 @@ static struct BurnDIPInfo neodefaultDIPList[] = {
 	{0x07,	0xFF, 0xFF,	0x00, NULL}, // Fake DIP (Unibios HW)
 	{0x08,	0xFF, 0xFF,	0x00, NULL}, // Fake DIP (Overscan)
 
-	{0,		0xFE, 0,	2,	  "Autofire"},
+	{0,		0xFD, 0,	2,	  "Autofire"},
 	{0x00,	0x01, 0x04,	0x00, "Off"},
 	{0x00,	0x01, 0x04,	0x04, "On"},
 };
@@ -667,7 +667,7 @@ static struct BurnDIPInfo neoaesdefaultDIPList[] = {
 	{0x07,	0xFF, 0xFF,	0x00, NULL}, // Fake DIP (Unibios HW)
 	{0x08,	0xFF, 0xFF,	0x00, NULL}, // Fake DIP (Overscan)
 
-	{0,		0xFE, 0,	2,	  "Autofire"},
+	{0,		0xFD, 0,	2,	  "Autofire"},
 	{0x00,	0x01, 0x04,	0x00, "Off"},
 	{0x00,	0x01, 0x04,	0x04, "On"},
 };
@@ -684,7 +684,7 @@ static struct BurnDIPInfo neousadefaultDIPList[] = {
 	{0x07,	0xFF, 0xFF,	0x00, NULL}, // Fake DIP (Unibios HW)
 	{0x08,	0xFF, 0xFF,	0x00, NULL}, // Fake DIP (Overscan)
 
-	{0,		0xFE, 0,	2,	  "Autofire"},
+	{0,		0xFD, 0,	2,	  "Autofire"},
 	{0x00,	0x01, 0x04,	0x00, "Off"},
 	{0x00,	0x01, 0x04,	0x04, "On"},
 };
@@ -701,7 +701,7 @@ static struct BurnDIPInfo neojpndefaultDIPList[] = {
 	{0x07,	0xFF, 0xFF,	0x00, NULL}, // Fake DIP (Unibios HW)
 	{0x08,	0xFF, 0xFF,	0x00, NULL}, // Fake DIP (Overscan)
 
-	{0,		0xFE, 0,	2,	  "Autofire"},
+	{0,		0xFD, 0,	2,	  "Autofire"},
 	{0x00,	0x01, 0x04,	0x00, "Off"},
 	{0x00,	0x01, 0x04,	0x04, "On"},
 };
@@ -718,7 +718,7 @@ static struct BurnDIPInfo neounidefaultDIPList[] = {
 	{0x07,	0xFF, 0xFF,	0x00, NULL}, // Fake DIP (Unibios HW)
 	{0x08,	0xFF, 0xFF,	0x00, NULL}, // Fake DIP (Overscan)
 
-	{0,		0xFE, 0,	2,	  "Autofire"},
+	{0,		0xFD, 0,	2,	  "Autofire"},
 	{0x00,	0x01, 0x04,	0x00, "Off"},
 	{0x00,	0x01, 0x04,	0x04, "On"},
 };
@@ -748,7 +748,7 @@ static struct BurnDIPInfo neodualDIPList[] = {
 	{0x07,	0xFF, 0xFF,	0x00, NULL}, // Fake DIP (Unibios HW)
 	{0x08,	0xFF, 0xFF,	0x00, NULL}, // Fake DIP (Overscan)
 
-	{0,		0xFE, 0,	2,	  "Autofire"},
+	{0,		0xFD, 0,	2,	  "Autofire"},
 	{0x00,	0x01, 0x04,	0x00, "Off"},
 	{0x00,	0x01, 0x04,	0x04, "On"},
 };
@@ -853,12 +853,12 @@ static struct BurnDIPInfo neogeoDIPList[] = {
 	{0x02,	0x01, 0x40,	0x00, "Normal"									},
 
 	// Unibios mode
-	{0,    0xFE, 0,    2,    "Unibios mode"								},
+	{0,    0xFD, 0,    2,    "Unibios mode"								},
 	{0x07, 0x01, 0x01, 0x00, "MVS"										},
 	{0x07, 0x01, 0x01, 0x01, "AES"										},
 
 	// Overscan
-	{0,		0xFE, 0,	3,	  "Overscan"						},
+	{0,		0xFD, 0,	3,	  "Overscan"						},
 	{0x08,	0x01, 0x03,	0x00, "Auto"									},
 	{0x08,	0x01, 0x03,	0x01, "Cropped"									},
 	{0x08,	0x01, 0x03,	0x02, "Visible"									},
@@ -881,7 +881,7 @@ static struct BurnDIPInfo neoKOFDIPList[] = {
 	{0x00,	0xFF, 0xFF,	0x00, NULL},
 	{0x01,	0xFF, 0x7F,	0x00, NULL},
 
-	{0,		0xFE, 0,	2,	  "Autofire"},
+	{0,		0xFD, 0,	2,	  "Autofire"},
 	{0x00,	0x01, 0x04,	0x00, "Off"},
 	{0x00,	0x01, 0x04,	0x04, "On"},
 
@@ -973,12 +973,12 @@ static struct BurnDIPInfo neoFakeDIPList[] = {
 	{0x02,	0x01, 0x40,	0x00, "Normal"									},
 
 	// Unibios mode
-	{0,    0xFE, 0,    2,    "Unibios mode"								},
+	{0,    0xFD, 0,    2,    "Unibios mode"								},
 	{0x07, 0x01, 0x01, 0x00, "MVS"										},
 	{0x07, 0x01, 0x01, 0x01, "AES"										},
 
 	// Overscan
-	{0,		0xFE, 0,	3,	  "Overscan"						},
+	{0,		0xFD, 0,	3,	  "Overscan"						},
 	{0x08,	0x01, 0x03,	0x00, "Auto"									},
 	{0x08,	0x01, 0x03,	0x01, "Cropped"									},
 	{0x08,	0x01, 0x03,	0x02, "Visible"									},
@@ -994,7 +994,7 @@ static struct BurnDIPInfo neoCDDIPList[] = {
 	{0x01,	0xFF, 0xFF,	0x00, NULL								}, // BIOS
 	{0x02,	0xFF, 0xFF,	0x00, NULL								}, // Fake DIP (Overscan)
 
-	{0,		0xFE, 0,	4,	  "Region"							},
+	{0,		0xFD, 0,	4,	  "Region"							},
 	{0x00,	0x01, 0x03,	0x00, "Japan"							},
 	{0x00,	0x01, 0x03,	0x01, "USA"								},
 	{0x00,	0x01, 0x03,	0x02, "Europe"							},
@@ -1011,7 +1011,7 @@ static struct BurnDIPInfo neoCDDIPList[] = {
 	{0x01,	0x01, 0x40,	0x00, "Super Speed"						},
 
 	// Overscan
-	{0,		0xFE, 0,	3,	  "Overscan"				},
+	{0,		0xFD, 0,	3,	  "Overscan"				},
 	{0x02,	0x01, 0x03,	0x00, "Auto"							},
 	{0x02,	0x01, 0x03,	0x01, "Cropped"							},
 	{0x02,	0x01, 0x03,	0x02, "Visible"							},
@@ -1091,12 +1091,12 @@ static struct BurnDIPInfo neotrackballDIPList[] = {
 	{0x02,	0x01, 0x40,	0x00, "Normal"									},
 
 	// Unibios mode
-	{0,    0xFE, 0,    2,    "Unibios mode"								},
+	{0,    0xFD, 0,    2,    "Unibios mode"								},
 	{0x07, 0x01, 0x01, 0x00, "MVS"										},
 	{0x07, 0x01, 0x01, 0x01, "AES"										},
 
 	// Overscan
-	{0,		0xFE, 0,	3,	  "Overscan"						},
+	{0,		0xFD, 0,	3,	  "Overscan"						},
 	{0x08,	0x01, 0x03,	0x00, "Auto"									},
 	{0x08,	0x01, 0x03,	0x01, "Cropped"									},
 	{0x08,	0x01, 0x03,	0x02, "Visible"									},
@@ -1117,11 +1117,11 @@ static struct BurnDIPInfo neoForceAESDIPList[] = {
 	{0x06,	0xFF, 0xFF,	0x00, NULL              }, // Fake DIP
 
 	// DIP 1
-	{0,		0xFE, 0,	2,	  "Autofire"        },
+	{0,		0xFD, 0,	2,	  "Autofire"        },
 	{0x00,	0x01, 0x04,	0x00, "Off"             },
 	{0x00,	0x01, 0x04,	0x04, "On"              },
 
-	{0,		0xFE, 0,	2,	  "Free play"       },
+	{0,		0xFD, 0,	2,	  "Free play"       },
 	{0x00,	0x01, 0x40,	0x00, "Off"             },
 	{0x00,	0x01, 0x40,	0x40, "On"              },
 
@@ -1148,7 +1148,7 @@ static struct BurnDIPInfo neoForceAESDIPList[] = {
 	{0x02,	0x01, 0x40,	0x00, "Normal"          },
 
 	// Overscan
-	{0,		0xFE, 0,	3,	  "Overscan"},
+	{0,		0xFD, 0,	3,	  "Overscan"},
 	{0x06,	0x01, 0x03,	0x00, "Auto"},
 	{0x06,	0x01, 0x03,	0x01, "Cropped"},
 	{0x06,	0x01, 0x03,	0x02, "Visible"},
@@ -1166,7 +1166,7 @@ static struct BurnDIPInfo neoForceMVSDIPList[] = {
 	{0x03,	0xFF, 0xFF,	0x01, NULL										}, // Slots
 	{0x08,	0xFF, 0xFF,	0x00, NULL										}, // Fake DIP (Overscan)
 
-	{0,		0xFE, 0,	2,	  "Autofire"								},
+	{0,		0xFD, 0,	2,	  "Autofire"								},
 	{0x00,	0x01, 0x04,	0x00, "Off"										},
 	{0x00,	0x01, 0x04,	0x04, "On"										},
 	// DIP 1
@@ -1236,12 +1236,12 @@ static struct BurnDIPInfo neoForceMVSDIPList[] = {
 	{0x02,	0x01, 0x40,	0x00, "Normal"									},
 
 	// Unibios mode
-	{0,    0xFE, 0,    2,    "Unibios mode"								},
+	{0,    0xFD, 0,    2,    "Unibios mode"								},
 	{0x07, 0x01, 0x01, 0x00, "MVS"										},
 	{0x07, 0x01, 0x01, 0x01, "AES"										},
 
 	// Overscan
-	{0,		0xFE, 0,	3,	  "Overscan"},
+	{0,		0xFD, 0,	3,	  "Overscan"},
 	{0x08,	0x01, 0x03,	0x00, "Auto"},
 	{0x08,	0x01, 0x03,	0x01, "Cropped"},
 	{0x08,	0x01, 0x03,	0x02, "Visible"},
@@ -1259,7 +1259,7 @@ static struct BurnDIPInfo ngdefaultDIPList[] = {
 	{0x03,	0xFF, 0xFF,	0x01, NULL										}, // Slots
 	{0x08,	0xFF, 0xFF,	0x00, NULL										}, // Fake DIP (Overscan)
 
-	{0,		0xFE, 0,	2,	  "Autofire"								},
+	{0,		0xFD, 0,	2,	  "Autofire"								},
 	{0x00,	0x01, 0x04,	0x00, "Off"										},
 	{0x00,	0x01, 0x04,	0x04, "On"										},
 	// DIP 1
@@ -1345,12 +1345,12 @@ static struct BurnDIPInfo ngdefaultDIPList[] = {
 	{0x02,	0x01, 0x40,	0x00, "Normal"									},
 
 	// Unibios mode
-	{0,    0xFE, 0,    2,    "Unibios mode"								},
+	{0,    0xFD, 0,    2,    "Unibios mode"								},
 	{0x07, 0x01, 0x01, 0x00, "MVS"										},
 	{0x07, 0x01, 0x01, 0x01, "AES"										},
 
 	// Overscan
-	{0,		0xFE, 0,	3,	  "Overscan"						},
+	{0,		0xFD, 0,	3,	  "Overscan"								},
 	{0x08,	0x01, 0x03,	0x00, "Auto"									},
 	{0x08,	0x01, 0x03,	0x01, "Cropped"									},
 	{0x08,	0x01, 0x03,	0x02, "Visible"									},
@@ -1366,7 +1366,7 @@ static struct BurnDIPInfo aesdefaultDIPList[] = {
 	{0x03,	0xFF, 0xFF,	0x01, NULL										}, // Slots
 	{0x08,	0xFF, 0xFF,	0x00, NULL										}, // Fake DIP (Overscan)
 
-	{0,		0xFE, 0,	2,	  "Autofire"								},
+	{0,		0xFD, 0,	2,	  "Autofire"								},
 	{0x00,	0x01, 0x04,	0x00, "Off"										},
 	{0x00,	0x01, 0x04,	0x04, "On"										},
 	// DIP 1
@@ -1452,12 +1452,12 @@ static struct BurnDIPInfo aesdefaultDIPList[] = {
 	{0x02,	0x01, 0x40,	0x00, "Normal"									},
 
 	// Unibios mode
-	{0,    0xFE, 0,    2,    "Unibios mode"								},
+	{0,    0xFD, 0,    2,    "Unibios mode"								},
 	{0x07, 0x01, 0x01, 0x00, "MVS"										},
 	{0x07, 0x01, 0x01, 0x01, "AES"										},
 
 	// Overscan
-	{0,		0xFE, 0,	3,	  "Overscan"						},
+	{0,		0xFD, 0,	3,	  "Overscan"						},
 	{0x08,	0x01, 0x03,	0x00, "Auto"									},
 	{0x08,	0x01, 0x03,	0x01, "Cropped"									},
 	{0x08,	0x01, 0x03,	0x02, "Visible"									},
@@ -1467,7 +1467,7 @@ static struct BurnDIPInfo mslug3xDIPList[] = {
 	// Fake DIPs
 	{0x04, 0xFF, 0xFF, 0x00, NULL                           },  // Release
 
-	{0,    0xFE, 0,    6,    "Version change (Must reload)" },
+	{0,    0xFD, 0,    6,    "Version change (Must reload)" },
 	{0x04, 0x01, 0x1F, 0x00, "Release"                      },
 	{0x04, 0x01, 0x1F, 0x01, "Public Beta"                  },
 	{0x04, 0x01, 0x1F, 0x02, "Development 0"                },
@@ -1480,7 +1480,7 @@ static struct BurnDIPInfo sengk3ebDIPList[] = {
 	// Fake DIPs
 	{0x06, 0xFF, 0xFF, 0x00, NULL                           },  // Green Blue
 
-	{0,    0xFE, 0,    2,    "Version change (Must reload)" },
+	{0,    0xFD, 0,    2,    "Version change (Must reload)" },
 	{0x06, 0x01, 0x01, 0x00, "Green Blue"                   },
 	{0x06, 0x01, 0x01, 0x01, "Green Blue earlier"           },
 };
@@ -1489,7 +1489,7 @@ static struct BurnDIPInfo kof96aeDIPList[] = {
 	// Fake DIPs
 	{0x06, 0xFF, 0xFF, 0x00, NULL                           },  // Build 2.3.0320
 
-	{0,    0xFE, 0,    2,    "Version change (Must reload)" },
+	{0,    0xFD, 0,    2,    "Version change (Must reload)" },
 	{0x06, 0x01, 0x01, 0x00, "Build 2.3.0320"               },
 	{0x06, 0x01, 0x01, 0x01, "earlier"                      },
 };
@@ -1498,7 +1498,7 @@ static struct BurnDIPInfo kof97aeDIPList[] = {
 	// Fake DIPs
 	{0x06, 0xFF, 0xFF, 0x00, NULL                           },  // Build 2.1.0212
 
-	{0,    0xFE, 0,    2,    "Version change (Must reload)" },
+	{0,    0xFD, 0,    2,    "Version change (Must reload)" },
 	{0x06, 0x01, 0x01, 0x00, "Build 2.1.0212"               },
 	{0x06, 0x01, 0x01, 0x01, "Build 2.1.1811"               },
 };
@@ -1507,7 +1507,7 @@ static struct BurnDIPInfo kof97tDIPList[] = {
 	// Fake DIPs
 	{0x06, 0xFF, 0xFF, 0x00, NULL                           },  // Optimised
 
-	{0,    0xFE, 0,    2,    "Version change (Must reload)" },
+	{0,    0xFD, 0,    2,    "Version change (Must reload)" },
 	{0x06, 0x01, 0x01, 0x00, "Optimised"                    },
 	{0x06, 0x01, 0x01, 0x01, "Optimised 2020"               },
 };
@@ -1516,7 +1516,7 @@ static struct BurnDIPInfo kof98aeDIPList[] = {
 	// Fake DIPs
 	{0x06, 0xFF, 0xFF, 0x00, NULL                           },  // 2016
 
-	{0,    0xFE, 0,    2,    "Version change (Must reload)"	},
+	{0,    0xFD, 0,    2,    "Version change (Must reload)"	},
 	{0x06, 0x01, 0x01, 0x00, "2016"							},
 	{0x06, 0x01, 0x01, 0x01, "2007"							},
 };
@@ -1525,7 +1525,7 @@ static struct BurnDIPInfo kof98cbDIPList[] = {
 	// Fake DIPs
 	{0x06, 0xFF, 0xFF, 0x00, NULL                           },  // Original
 
-	{0,    0xFE, 0,    2,    "Version change (Must reload)" },
+	{0,    0xFD, 0,    2,    "Version change (Must reload)" },
 	{0x06, 0x01, 0x01, 0x00, "Original"                     },
 	{0x06, 0x01, 0x01, 0x01, "GOTVG"                        },
 };
@@ -1534,7 +1534,7 @@ static struct BurnDIPInfo kof98mixDIPList[] = {
 	// Fake DIPs
 	{0x06, 0xFF, 0xFF, 0x00, NULL                           },  // GOTVG
 
-	{0,    0xFE, 0,    2,    "Version change (Must reload)" },
+	{0,    0xFD, 0,    2,    "Version change (Must reload)" },
 	{0x06, 0x01, 0x01, 0x00, "GOTVG"                        },
 	{0x06, 0x01, 0x01, 0x01, "Original"                     },
 };
@@ -1543,7 +1543,7 @@ static struct BurnDIPInfo kof2kotcDIPList[] = {
 	// Fake DIPs
 	{0x06, 0xFF, 0xFF, 0x00, NULL                           },  // YZKOF
 
-	{0,    0xFE, 0,    2,    "Version change (Must reload)"	},
+	{0,    0xFD, 0,    2,    "Version change (Must reload)"	},
 	{0x06, 0x01, 0x01, 0x00, "YZKOF"                        },
 	{0x06, 0x01, 0x01, 0x01, "GOTVG"                        },
 };
@@ -1552,7 +1552,7 @@ static struct BurnDIPInfo kf2k23rdDIPList[] = {
 	// Fake DIPs
 	{0x06, 0xFF, 0xFF, 0x00, NULL                           },  // GOTVG
 
-	{0,    0xFE, 0,    2,    "Version change (Must reload)"	},
+	{0,    0xFD, 0,    2,    "Version change (Must reload)"	},
 	{0x06, 0x01, 0x01, 0x00, "GOTVG"                        },
 	{0x06, 0x01, 0x01, 0x01, "YZKOF"                        },
 };
@@ -1561,7 +1561,7 @@ static struct BurnDIPInfo kf10thuoDIPList[] = {
 	// Fake DIPs
 	{0x06, 0xFF, 0xFF, 0x00, NULL                           },  // GOTVG
 
-	{0,    0xFE, 0,    2,    "Version change (Must reload)"	},
+	{0,    0xFD, 0,    2,    "Version change (Must reload)"	},
 	{0x06, 0x01, 0x01, 0x00, "GOTVG"                        },
 	{0x06, 0x01, 0x01, 0x01, "wo1wan"                       },
 };
@@ -1570,7 +1570,7 @@ static struct BurnDIPInfo lastbladDIPList[] = {
 	// Fake DIPs
 	{0x06, 0xFF, 0xFF, 0x00, NULL                           },  // Off
 
-	{0,    0xFE, 0,    2,    "Mini game"                    },
+	{0,    0xFD, 0,    2,    "Mini game"                    },
 	{0x06, 0x01, 0x01, 0x00, "Off"                          },
 	{0x06, 0x01, 0x01, 0x01, "On"                           },
 };
@@ -1579,7 +1579,7 @@ static struct BurnDIPInfo nam1975DIPList[] = {
 	// Fake DIPs
 	{0x06, 0xFF, 0xFF, 0x00, NULL                           },  // Off
 
-	{0,    0xFE, 0,    2,    "Demo scene"                   },
+	{0,    0xFD, 0,    2,    "Demo scene"                   },
 	{0x06, 0x01, 0x01, 0x00, "Off"                          },
 	{0x06, 0x01, 0x01, 0x01, "On"                           },
 };
@@ -1588,7 +1588,16 @@ static struct BurnDIPInfo mslugLvxDIPList[] = {
 	// Fake DIPs
 	{0x06, 0xFF, 0xFF, 0x01, NULL                           },  // On
 
-	{0,    0xFE, 0,    2,    "LVX Option"                   },
+	{0,    0xFD, 0,    2,    "LVX Option"                   },
+	{0x06, 0x01, 0x01, 0x00, "Off"                          },
+	{0x06, 0x01, 0x01, 0x01, "On"                           },
+};
+
+static struct BurnDIPInfo mslug2DIPList[] = {
+	// Fake DIPs
+	{0x06, 0xFF, 0xFF, 0x00, NULL                           },  // Off
+
+	{0,    0xFD, 0,    2,    "Turbo hack"                   },
 	{0x06, 0x01, 0x01, 0x00, "Off"                          },
 	{0x06, 0x01, 0x01, 0x01, "On"                           },
 };
@@ -1607,6 +1616,7 @@ STDDIPINFOEXT(kf10thuo,		ngdefault,		kf10thuo	)
 STDDIPINFOEXT(lastblad,		ngdefault,		lastblad	)
 STDDIPINFOEXT(nam1975,		ngdefault,		nam1975		)
 STDDIPINFOEXT(mslugLvx,		ngdefault,		mslugLvx	)
+STDDIPINFOEXT(mslug2,		ngdefault,		mslug2		)
 
 
 // Rom information
@@ -6832,13 +6842,86 @@ static struct BurnRomInfo mslug2RomDesc[] = {
 STDROMPICKEXT(mslug2, mslug2, neogeo)
 STD_ROM_FN(mslug2)
 
+static void Mslug2PatchCallback()
+{
+
+	// 24-bit address array
+	const UINT32 patch_address[] = {
+		0x001450, 0x001451, 0x001452, 0x001453, 0x001454, 0x001455, 0x001456, 0x001457, 0x001458, 0x001459,
+
+		0x001464, 0x001465, 0x001466, 0x001467, 0x001468, 0x001469, 0x00146a, 0x00146b, 0x00146c, 0x00146d,
+
+		0x00147c, 0x001486,
+
+		0x0014d2, 0x0014d3, 0x0014d4, 0x0014d5, 0x0014d6, 0x0014d7,
+
+		0x001650, 0x001651, 0x001652, 0x001653, 0x001654, 0x001655, 0x001656, 0x001657,
+
+		0x00165e, 0x00165f, 0x001660, 0x001661, 0x001662, 0x001663,
+
+		0x0d8000, 0x0d8001, 0x0d8002, 0x0d8003, 0x0d8004, 0x0d8005, 0x0d8006, 0x0d8007, 0x0d8008, 0x0d8009,
+		0x0d800a, 0x0d800b, 0x0d800c, 0x0d800d, 0x0d800e, 0x0d800f, 0x0d8010, 0x0d8011, 0x0d8012, 0x0d8013
+	};
+
+	// 8-bit data value array
+	const UINT8 patch_data[2][62] = {
+		{
+			// original_data
+			0x2d, 0x10, 0x8a, 0x80, 0x00, 0x52, 0x00, 0x65, 0x0c, 0x00,
+
+			0xed, 0x08, 0x07, 0x00, 0x8c, 0x80, 0x00, 0x66, 0x78, 0x00,
+
+			0x5c, 0x52,
+
+			0x7c, 0x1b, 0xff, 0x00, 0x8d, 0x80,
+
+			0xad, 0x08, 0x07, 0x00, 0x8d, 0x80, 0xf8, 0x67,
+
+			0x7c, 0x1b, 0x00, 0x00, 0x8a, 0x80,
+
+			0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+			0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+		},
+		{
+			// turbo_data
+			0x02, 0x70, 0x71, 0x4e, 0x71, 0x4e, 0x71, 0x4e, 0x71, 0x4e,
+
+			0x71, 0x4e, 0x71, 0x4e, 0x71, 0x4e, 0x71, 0x4e, 0x71, 0x4e,
+
+			0x50, 0x46,
+
+			0x2d, 0x52, 0x8d, 0x80, 0x71, 0x4e,
+
+			0xf9, 0x4e, 0x0d, 0x00, 0x00, 0x80, 0x71, 0x4e,
+
+			0x71, 0x4e, 0x71, 0x4e, 0x71, 0x4e,
+
+			0x2d, 0x0c, 0x02, 0x00, 0x8d, 0x80, 0xf8, 0x65, 0x7c, 0x1b,
+			0x00, 0x00, 0x8d, 0x80, 0xf9, 0x4e, 0x00, 0x00, 0x58, 0x16
+		}
+	};
+
+	const INT32 nIndex  = (VerSwitcher & 1) ? 1 : 0;
+	const size_t nCount = (sizeof(patch_address) / sizeof(patch_address[0]));
+
+	for (size_t i = 0; i < nCount; i++)
+		Neo68KROMActive[patch_address[i]] = patch_data[nIndex][i];
+}
+
+static INT32 mslug2Init()
+{
+	NeoCallbackActive->pResetCallback = Mslug2PatchCallback; // Turbo hack
+
+	return NeoInit();
+}
+
 struct BurnDriver BurnDrvMSlug2 = {
 	"mslug2", NULL, "neogeo", NULL, "1998",
 	"Metal Slug 2 - Super Vehicle-001/II (NGM-2410 ~ NGH-2410)\0", NULL, "SNK", "Neo Geo MVS",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_HISCORE_SUPPORTED, 2, HARDWARE_PREFIX_CARTRIDGE | HARDWARE_SNK_NEOGEO, GBF_RUNGUN, FBF_MSLUG,
-	NULL, mslug2RomInfo, mslug2RomName, NULL, NULL, NULL, NULL, neogeoInputInfo, neogeoDIPInfo,
-	NeoInit, NeoExit, NeoFrame, NeoRender, NeoScan, &NeoRecalcPalette,
+	NULL, mslug2RomInfo, mslug2RomName, NULL, NULL, NULL, NULL, neogeoInputInfo, mslug2DIPInfo,
+	mslug2Init, NeoExit, NeoFrame, NeoRender, NeoScan, &NeoRecalcPalette,
 	0x1000, 304, 224, 4, 3
 };
 
@@ -21732,14 +21815,14 @@ struct BurnDriver BurnDrvSamsh2jq = {
 };
 
 
-// Samurai Shodown II / Shin Samurai Spirits - Haohmaru Jigokuhen (Perfect V. 2.6, Hack)
+// Samurai Shodown II / Shin Samurai Spirits - Haohmaru Jigokuhen (Perfect V. 2.7, Hack)
 // Modified by Bear
-// 20260516
+// 20260528
 
 static struct BurnRomInfo samsho2peRomDesc[] = {
-	{ "063-p1pe.p1",	0x100000, 0xf828c04c, 1 | BRF_ESS | BRF_PRG }, //  0 68K code
-	{ "063-p2pe.sp2",	0x100000, 0x7594e942, 1 | BRF_ESS | BRF_PRG }, //  1
-	{ "063-p3pe.p3",	0x020000, 0x7dd8bada, 1 | BRF_ESS | BRF_PRG }, //  2 Extra ROM
+	{ "063-p1pe.p1",	0x100000, 0x141bc590, 1 | BRF_ESS | BRF_PRG }, //  0 68K code
+	{ "063-p2pe.sp2",	0x100000, 0x8a0163d7, 1 | BRF_ESS | BRF_PRG }, //  1
+	{ "063-p3pe.p3",	0x020000, 0x5a51a63c, 1 | BRF_ESS | BRF_PRG }, //  2 Extra ROM
 
 	SAMSHO2_COMPONENTS
 };
@@ -21749,8 +21832,8 @@ STD_ROM_FN(samsho2pe)
 
 struct BurnDriver BurnDrvSamsho2pe = {
 	"samsho2pe", "samsho2", "neogeo", NULL, "2023-26",
-	"Samurai Shodown II / Shin Samurai Spirits - Haohmaru Jigokuhen (Perfect V. 2.6, Hack)\0", NULL, "Bear", "Neo Geo MVS",
-	L"Samurai Shodown II\0\u771F Samurai Spirits - \u8987\u738B\u4E38\u5730\u7344\u5909 (Perfect V. 2.6, Hack)\0", NULL, NULL, NULL,
+	"Samurai Shodown II / Shin Samurai Spirits - Haohmaru Jigokuhen (Perfect V. 2.7, Hack)\0", NULL, "Bear", "Neo Geo MVS",
+	L"Samurai Shodown II\0\u771F Samurai Spirits - \u8987\u738B\u4E38\u5730\u7344\u5909 (Perfect V. 2.7, Hack)\0", NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_HACK, 2, HARDWARE_PREFIX_CARTRIDGE | HARDWARE_SNK_NEOGEO, GBF_VSFIGHT, FBF_SAMSHO,
 	NULL, samsho2peRomInfo, samsho2peRomName, NULL, NULL, NULL, NULL, neogeoInputInfo, neoForceMVSDIPInfo,
 	samsh2spInit, NeoExit, NeoFrame, NeoRender, NeoScan, &NeoRecalcPalette,
@@ -27979,7 +28062,7 @@ struct BurnDriver BurnDrvTmntia = {
 };
 
 
-// Violent Vengeance: The Universe Hero (Beta 3.28)
+// Violent Vengeance: The Universe Hero (Beta 3.28, FEB 1 2026)
 // https://ozzyouzo.itch.io/violentv
 
 static struct BurnRomInfo violentvRomDesc[] = {
@@ -28001,8 +28084,8 @@ STDROMPICKEXT(violentv, violentv, neogeo)
 STD_ROM_FN(violentv)
 
 struct BurnDriver BurnDrvViolentv = {
-	"violentv", NULL, "neogeo", NULL, "2025-26",
-	"Violent Vengeance: The Universe Hero (Beta 3.28)\0", NULL, "OzzyOuzo", "Neo Geo MVS",
+	"violentv", NULL, "neogeo", NULL, "2026",
+	"Violent Vengeance: The Universe Hero (Beta 3.28, FEB 1 2026)\0", NULL, "Balek Corp.", "Neo Geo MVS",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_HOMEBREW, 2, HARDWARE_PREFIX_CARTRIDGE | HARDWARE_SNK_NEOGEO, GBF_VSFIGHT, 0,
 	NULL, violentvRomInfo, violentvRomName, NULL, NULL, NULL, NULL, neogeoInputInfo, neogeoDIPInfo,

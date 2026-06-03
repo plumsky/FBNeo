@@ -31,8 +31,8 @@ static void (*scanline_callback)(INT32 line) = NULL;
 static INT32 scanline;
 static INT32 lastline;
 
-static void partial_update_dummy() { };
-static void DrvDrawBegin_dummy() { };
+static void partial_update_dummy() { }
+static void DrvDrawBegin_dummy() { }
 
 static void (*pDrvDrawBegin)() = NULL;
 static void (*partial_update)() = NULL;
