@@ -106,54 +106,58 @@ bool BurnCheckMMXSupport()
 #endif
 }
 
-static void BurnGameListInit()
-{	// Avoid broken references, RomData requires separate string storage
-	if (0 == nBurnDrvCount) return;
-	
-		pszShortName = (char**   )malloc(nBurnDrvCount * sizeof(char*));
-		pszFullNameA = (char**   )malloc(nBurnDrvCount * sizeof(char*));
-		pszFullNameW = (wchar_t**)malloc(nBurnDrvCount * sizeof(wchar_t*));
-
-		if ((NULL != pszShortName) && (NULL != pszFullNameA) && (NULL != pszFullNameW)) {
-			for (UINT32 i = 0; i < nBurnDrvCount; i++) {
-				pszShortName[i] = (char*   )malloc(100      * sizeof(char));
-				pszFullNameA[i] = (char*   )malloc(MAX_PATH * sizeof(char));
-				pszFullNameW[i] = (wchar_t*)malloc(MAX_PATH * sizeof(wchar_t));
-
-				memset(pszShortName[i], '\0', 100      * sizeof(char));
-				memset(pszFullNameA[i], '\0', MAX_PATH * sizeof(char));
-				memset(pszFullNameW[i], '\0', MAX_PATH * sizeof(wchar_t));
-
-				if (NULL != pszShortName[i]) {
-					strcpy(pszShortName[i], pDriver[i]->szShortName);
-					pDriver[i]->szShortName = pszShortName[i];
-				}
-				if (NULL != pszFullNameA[i]) {
-					strcpy(pszFullNameA[i], pDriver[i]->szFullNameA);
-					pDriver[i]->szFullNameA = pszFullNameA[i];
-				}
-#if defined (_UNICODE)
-				if (NULL != pDriver[i]->szFullNameW) {
-					wmemcpy(pszFullNameW[i], pDriver[i]->szFullNameW, MAX_PATH);	// Include '\0'
-				}
-				pDriver[i]->szFullNameW = pszFullNameW[i];
-#endif
-			}
-		}
-
-}
+static char* pShortNamePool = NULL;
+static char* pFullNameAPool = NULL;
+static wchar_t* pFullNameWPool = NULL;
 
 static void BurnGameListExit()
 {
 	// Release of storage space
-	for (UINT32 i = 0; i < nBurnDrvCount; i++) {
-		if ((NULL != pszShortName) && (NULL != pszShortName[i])) free(pszShortName[i]);
-		if ((NULL != pszFullNameA) && (NULL != pszFullNameA[i])) free(pszFullNameA[i]);
-		if ((NULL != pszFullNameW) && (NULL != pszFullNameW[i])) free(pszFullNameW[i]);
+	if (pShortNamePool) { free(pShortNamePool); pShortNamePool = NULL; }
+	if (pFullNameAPool) { free(pFullNameAPool); pFullNameAPool = NULL; }
+	if (pFullNameWPool) { free(pFullNameWPool); pFullNameWPool = NULL; }
+
+	if (pszShortName) { free(pszShortName); pszShortName = NULL; }
+	if (pszFullNameA) { free(pszFullNameA); pszFullNameA = NULL; }
+	if (pszFullNameW) { free(pszFullNameW); pszFullNameW = NULL; }
+}
+
+static void BurnGameListInit()
+{	// Avoid broken references, RomData requires separate string storage
+	if (0 == nBurnDrvCount) return;
+
+	pszShortName = (char**)malloc(nBurnDrvCount * sizeof(char*));
+	pszFullNameA = (char**)malloc(nBurnDrvCount * sizeof(char*));
+	pszFullNameW = (wchar_t**)malloc(nBurnDrvCount * sizeof(wchar_t*));
+
+	pShortNamePool = (char*)malloc(nBurnDrvCount * 100 * sizeof(char));
+	pFullNameAPool = (char*)malloc(nBurnDrvCount * MAX_PATH * sizeof(char));
+	pFullNameWPool = (wchar_t*)malloc(nBurnDrvCount * MAX_PATH * sizeof(wchar_t));
+
+	if (!pszShortName || !pszFullNameA || !pszFullNameW ||
+		!pShortNamePool || !pFullNameAPool || !pFullNameWPool) {
+		BurnGameListExit();
+		return;
 	}
-	if (NULL != pszShortName) free(pszShortName);
-	if (NULL != pszFullNameA) free(pszFullNameA);
-	if (NULL != pszFullNameW) free(pszFullNameW);
+
+	for (UINT32 i = 0; i < nBurnDrvCount; i++) {
+		pszShortName[i] = pShortNamePool + i * 100;
+		pszFullNameA[i] = pFullNameAPool + i * MAX_PATH;
+		pszFullNameW[i] = pFullNameWPool + i * MAX_PATH;
+
+		strcpy(pszShortName[i], pDriver[i]->szShortName);
+		pDriver[i]->szShortName = pszShortName[i];
+
+		strcpy(pszFullNameA[i], pDriver[i]->szFullNameA);
+		pDriver[i]->szFullNameA = pszFullNameA[i];
+
+#if defined (_UNICODE)
+		if (NULL != pDriver[i]->szFullNameW) {
+			wmemcpy(pszFullNameW[i], pDriver[i]->szFullNameW, MAX_PATH);
+		}
+		pDriver[i]->szFullNameW = pszFullNameW[i];
+#endif
+	}
 }
 
 extern "C" INT32 BurnLibInit()

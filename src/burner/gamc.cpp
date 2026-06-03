@@ -780,10 +780,10 @@ INT32 GamcPlayer(struct GameInp* pgi, char* szi, INT32 nPlayer, INT32 nDevice)
 				if (strcmp(szi, "fire 6") == 0) {
 					KEY(FBK_C);
 				}
-				if (_stricmp(szi, "3× Punch") == 0) {
+				if (_stricmp(szi, "3ï¿½ Punch") == 0) {
 					MACRO(FBK_F);
 				}
-				if (_stricmp(szi, "3× Kick") == 0) {
+				if (_stricmp(szi, "3ï¿½ Kick") == 0) {
 					MACRO(FBK_V);
 				}
 			} else {
@@ -921,10 +921,10 @@ INT32 GamcPlayerHotRod(struct GameInp* pgi, char* szi, INT32 nPlayer, INT32 nFla
 
 				// Map the 3x macros on X-Arcade
 				if ((nFlags & 0x10)) {
-					if (_stricmp(szi, "3× Punch") == 0) {
+					if (_stricmp(szi, "3ï¿½ Punch") == 0) {
 						MACRO(FBK_C);
 					}
-					if (_stricmp(szi, "3× Kick") == 0) {
+					if (_stricmp(szi, "3ï¿½ Kick") == 0) {
 						MACRO(FBK_5);
 					}
 				}
@@ -1027,10 +1027,10 @@ INT32 GamcPlayerHotRod(struct GameInp* pgi, char* szi, INT32 nPlayer, INT32 nFla
 
 					// Map the 3x macros on X-Arcade
 					if ((nFlags & 0x10)) {
-						if (_stricmp(szi, "3× Punch") == 0) {
+						if (_stricmp(szi, "3ï¿½ Punch") == 0) {
 							MACRO(FBK_RBRACKET);
 						}
-						if (_stricmp(szi, "3× Kick") == 0) {
+						if (_stricmp(szi, "3ï¿½ Kick") == 0) {
 							MACRO(FBK_6);
 						}
 					}
